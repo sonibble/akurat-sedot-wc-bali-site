@@ -1,7 +1,58 @@
 ---
+type Nav = {
+  label: string
+  href: string
+}
 
+const navs: Nav[] = [
+  {
+    label: "Manfaat",
+    href: "/#benefits",
+  },
+  {
+    label: "Pelayanan",
+    href: "/#services",
+  },
+  {
+    label: "Ulasan",
+    href: "/#testimonials",
+  },
+  {
+    label: "Tentang Kami",
+    href: "/#about",
+  },
+]
 ---
 
-<header class="flex items-center px-10">
-  <div class="flex"></div>
+<header class="flex items-center justify-between container mx-auto py-8 px-16">
+  <div class="flex items-center gap-12">
+    <a
+      href="/"
+      class="text font-semibold text-base transition-all duration-300 hover:-translate-y-1"
+      >Akurat Sedot WC Bali</a
+    >
+
+    <nav class="flex items-center">
+      {
+        navs.map((nav) => (
+          <a
+            href={nav.href}
+            class="flex items-center justify-center px-4 py-2 text-sm text-foreground/70 hover:text-foreground transition-all duration-300 rounded-full bg-transparent hover:bg-secondary hover:-translate-y-1"
+          >
+            {nav.label}
+          </a>
+        ))
+      }
+    </nav>
+  </div>
+
+  <div class="flex items-center">
+    <a
+      href="/"
+      target="_blank"
+      class="flex items-center justify-center px-4 h-10 gap-3 rounded-full leading-none text-sm font-medium border border-border transition-all duration-300 hover:-translate-y-1"
+    >
+      Chat di WA
+    </a>
+  </div>
 </header>
