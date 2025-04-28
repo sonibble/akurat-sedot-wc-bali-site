@@ -8,8 +8,6 @@
   --font-*: initial;
   --font-sans: var(--font-inter);
 
-  --text-sm: 0.84375rem;
-  --text-base: 0.9375rem;
   --text-lg: 1.03125rem;
   --text-xl: 1.125rem;
 
@@ -18,14 +16,14 @@
   --breakpoint-laptop: 64rem;
   --breakpoint-desktop: 80rem;
 
-  --color-background: hsl(40 43 96%);
+  --color-background: hsl(0 0 98%);
   --color-foreground: hsl(0 0 0%);
   --color-surface: hsl(0 0 100%);
   --color-border: hsl(0 0 94%);
   --color-input: hsl(0 0 96%);
-  --color-primary: hsl(80 67 25%);
+  --color-primary: hsl(0 0 4%);
   --color-primary-foreground: hsl(0 0 98%);
-  --color-secondary: hsl(0 0 96%);
+  --color-secondary: hsl(0 0 95%);
   --color-secondary-foreground: hsl(0 0 10%);
   --color-link: hsl(221 83 50%);
   --color-accent: hsl(0 0 40%);
