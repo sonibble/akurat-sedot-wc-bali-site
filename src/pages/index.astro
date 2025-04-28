@@ -1,7 +1,29 @@
 ---
-
+import Head from "@components/head.astro"
+import BenefitSection from "@components/landing/benefit-section.astro"
+import CtaSection from "@components/landing/cta-section.astro"
+import FaqSection from "@components/landing/faq-section.astro"
+import GallerySection from "@components/landing/gallery-section.astro"
+import HeroSection from "@components/landing/hero-section.astro"
+import ServiceSection from "@components/landing/service-section.astro"
+import TestimonialSection from "@components/landing/testimonial-section.astro"
+import MainLayout from "@layouts/main-layout.astro"
 ---
 
-<Layout>
-    <Welcome />
-</Layout>
+<MainLayout>
+  <Head
+    slot="head"
+    title="Jasa sedot wc bali"
+    description="Sedot wc bersih seluruh bali"
+  />
+
+  <main class="flex flex-col">
+    <HeroSection />
+    <BenefitSection />
+    <ServiceSection />
+    <GallerySection />
+    <TestimonialSection />
+    <FaqSection />
+    <CtaSection />
+  </main>
+</MainLayout>

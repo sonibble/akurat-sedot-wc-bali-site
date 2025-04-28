@@ -1,5 +1,24 @@
-// @ts-check
-import { defineConfig } from 'astro/config';
+import { defineConfig, fontProviders } from "astro/config"
+import tailwindcss from "@tailwindcss/vite"
+import robots from "astro-robots"
+import sitemap from "@astrojs/sitemap"
 
-// https://astro.build/config
-export default defineConfig({});
+export default defineConfig({
+  site: "http://localhost:3000",
+  devToolbar: {
+    enabled: false,
+  },
+  experimental: {
+    fonts: [
+      {
+        provider: fontProviders.google(),
+        name: "Inter",
+        cssVariable: "--font-inter",
+      },
+    ],
+  },
+  vite: {
+    plugins: [tailwindcss()],
+  },
+  integrations: [sitemap(), robots()],
+})

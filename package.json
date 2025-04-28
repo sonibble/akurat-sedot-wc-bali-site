@@ -1,14 +1,28 @@
 {
-  "name": "astro-site-starter",
+  "name": "akurat-sedot-wc-bali-site",
+  "version": "0.0.0",
+  "private": true,
   "type": "module",
-  "version": "0.0.1",
   "scripts": {
+    "check": "astro check",
+    "format": "prettier . --write",
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.7.5"
+    "@astrojs/check": "^0.9.4",
+    "@astrojs/sitemap": "^3.3.1",
+    "@flaticon/flaticon-uicons": "^3.3.1",
+    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/typography": "^0.5.16",
+    "@tailwindcss/vite": "^4.1.4",
+    "astro": "^5.7.6",
+    "astro-robots": "^2.3.1",
+    "prettier": "^3.5.3",
+    "prettier-plugin-astro": "^0.14.1",
+    "tailwindcss": "^4.1.4",
+    "typescript": "^5.8.3"
   }
 }
